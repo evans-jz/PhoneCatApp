@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+      </select>
+
+
+      name:<input ng-model="phonename">
+      image url:<input ng-model="phoneimageUrl">
+      snippet:<input ng-model="phonesnippet">
+        
+      <button ng-click="add()">add</button>
+
+      <p></p>
+
+      <a href="#/">To Evans' Resume</a>  
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="phones">
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
+            class="thumbnail phone-listing">
+          <phone-list info="phone"></phone-list>
+          <button ng-click="delete($index)">delete</button>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

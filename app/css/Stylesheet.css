@@ -1,0 +1,35 @@
+* {
+	font-family: Times;
+}
+
+.PersonalInfo h1{
+	text-align:center;
+}
+
+.PersonalInfo p{
+	text-align:center;
+	font-size: 10px;
+}
+
+.Education p{
+	font-weight: bold;
+}
+
+.Education {
+	border: 2px solid black;
+	border-left: 0px;
+	border-right: 0px;
+	font-size: 12px;
+}
+.JOB {
+	border-bottom: 2px solid black;
+	font-size: 12px;
+}
+.Activities {
+	border-bottom: 2px solid black;
+	font-size: 12px;
+}
+.Volunteers {
+	border-bottom: 2px solid black;
+	font-size: 12px;
+}
